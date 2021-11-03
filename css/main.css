@@ -200,7 +200,7 @@ img {
 width: 85%;
 }
 
-#work p,
+#projects p,
 #about p{
   width: 100%;
   text-align: left;
@@ -243,6 +243,14 @@ nav {
   padding-bottom: 80px;
 }
 
+#skills {
+  padding-top: 80px;
+}
+
+.skills-header {
+  margin-bottom: 20px;
+}
+
 #about {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -272,16 +280,8 @@ h4 {
   margin: 40px 0 60px 0;
 }
 
-#skills {
-  padding-top: 80px;
-}
-
 figure {
   margin: 20px 0 40px 0;
-}
-
-.skills-header {
-  margin-bottom: 20px;
 }
 
 .about-info h3 {
@@ -341,14 +341,120 @@ header h2 {
 
 /*PORTFOLIO*/
 
+#projects,
+#skills {
+  width: 100%
+}
+
+#projects h3 {
+  margin-top: 20px;
+}
+
+.project-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.home-project-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-project-info h4 {
+  font-weight: bold;
+}
+
+.home-project-info figure {
+  width:100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+
+.project-link {
+  background-color: #453E4F;
+  color: white;
+  padding: 10px 60px;
+  border-radius: 30px;
+}
+
+.project-link:hover {
+  background-color: #CAC4D1;
+  color: #453E4F;
+}
 
 
 /**********SKILLS**************/
 
+#skills {
+   background: #ffe8d6;
+}
+
+#skills h4 {
+  margin: 40px 0 40px 0;
+  font-weight: bold;
+}
+
+.language-wrapper p,
+.tech-wrapper p {
+  background-color: #F19494;
+  padding: 15px 0;
+  margin: 20px 0;
+}
+
+.tech {
+  width: 100%;
+}
+
+
 /************ABOUT*************/
 
-/***********FOOTER CONTACT*****/
+#about {
 
+}
+
+#profile-image {
+
+}
+
+#about h3,
+#about h4 {
+
+}
+
+/***********FOOTER BASE STYLES*****/
+
+footer {
+
+}
+
+footer .content-wrapper {
+
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+
+}
+
+footer ul {
+
+}
+
+footer .social-icons li {
+
+}
+
+footer .social-icons li i {
+
+}
 
 /* ==========================================================================
    Helper classes
