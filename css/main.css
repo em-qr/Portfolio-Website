@@ -173,6 +173,7 @@ li{
 
 span {
   font-weight: bold;
+  text-align: center;
 }
 
 img {
@@ -414,46 +415,69 @@ header h2 {
 /************ABOUT*************/
 
 #about {
-
+  width: 100%
 }
 
 #profile-image {
-
+  width: 90%;
 }
 
 #about h3,
-#about h4 {
-
+#about h4
+#about p {
+  color: #453E4F
 }
 
 /***********FOOTER BASE STYLES*****/
 
 footer {
-
+  width: 100%;
+  background: #ffe8d6;
 }
 
 footer .content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-left: 80px;
+}
 
+footer .contact-info {
+  width: 60%;
+}
+
+footer h4 {
+  width: 100%;
 }
 
 footer .social {
+  display: flex;
+  flex-direction: column;
 
 }
 
 footer .social-icons {
-
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 footer ul {
-
+  width: 100%
 }
 
 footer .social-icons li {
-
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .social-icons li i {
-
+  color: #453E4F;
+  font-size: 1.875rem;
 }
 
 /* ==========================================================================
