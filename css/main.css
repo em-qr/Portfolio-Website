@@ -89,17 +89,19 @@ textarea {
 /*********GENERAL STYLES*******/
 
  /* General Styles */
+ html,body{
+  overflow-x: hidden;
+}
 
- html {
+html {
   font-size: 16px;
  }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
   color: black;
-  background: white;
+  background-color: white;
  }
 
 ul,
@@ -124,14 +126,14 @@ h1 {
 
 h2 {
   color: #453E4F;
- font-family: 'Alike' serif;
- font-size: 1.25rem;
- font-weight: 400;
- line-height: 1.5;
- width:100%;
+  font-family: 'Alike' serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width:100%;
 }
 
-h3{
+h3 {
   font-size: 1.75rem;
 }
 
@@ -150,6 +152,7 @@ h6 {
   font-family: 'Alike', serif;
   line-height: 1.5;
   width: 100%;
+  color: #453E4F;
 }
 
  .project-link,
@@ -163,6 +166,10 @@ h6 {
 .about-info h4,
 .contact-title {
   font-weight: 400;
+}
+
+.intro-area h2 {
+  font-family: 'Alike', serif;
 }
 
 p,
@@ -213,8 +220,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   margin: 0;
 }
 
@@ -298,7 +304,7 @@ figure {
 }
 
 .contact-info {
-  margin: 0 0 60px 0;
+  margin: 30px 70px;
 }
 
 .contact-title {
@@ -321,7 +327,7 @@ header nav ul li {
  nav #contact-link {
    background-color: #F19494;
    padding: 10px 10px;
-   border-radius: 30px
+   border-radius: 30px;
 }
 
  nav ul {
@@ -425,22 +431,25 @@ header h2 {
 #about h3,
 #about h4
 #about p {
-  color: #453E4F
+  color: #4a4f3e;
+}
+
+#about span {
+  margin-left: 70px;
+  color: #453E4F;
 }
 
 /***********FOOTER BASE STYLES*****/
 
 footer {
-  width: 100%;
   background: #ffe8d6;
 }
 
 footer .content-wrapper {
   display: flex;
+  flex-flow: row wrap;
   align-items: flex-start;
   justify-content: center;
-  flex-flow: row wrap;
-  padding-left: 80px;
 }
 
 footer .contact-info {
@@ -451,24 +460,24 @@ footer h4 {
   width: 100%;
 }
 
+
 footer .social {
   display: flex;
-  flex-direction: column;
-
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 footer ul {
-  width: 100%
+  width: 100%;
 }
 
 footer .social-icons li {
-  width: 50px;
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
@@ -478,6 +487,10 @@ footer .social-icons li {
 footer .social-icons li i {
   color: #453E4F;
   font-size: 1.875rem;
+}
+
+.copyright {
+  font-size: 0.80rem;
 }
 
 /* ==========================================================================
@@ -577,9 +590,238 @@ footer .social-icons li i {
 
 /* ----------- Tablets larger than 768px wide ----------- */
 @media (min-width: 768px) {
-	body {
-    
-  }
+/******TABLET*****/
+
+/**GENERAL STYLES****/
+.content-wrapper {
+  max-width: 640px;
+}
+
+/****FONT STYLES******/
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5{
+  font-size: 1.5rem;
+}
+
+nav {
+  margin: 0px 0px 80px;
+}
+
+header nav ul li {
+  font-size: 1rem;
+}
+
+/*****ELEMENT MARGINS AND PADDINGS******/
+
+/*------HEADER------*/
+header {
+  padding: 60px 0px;
+}
+
+h2 {
+  margin: 80px 0px 0px;
+}
+
+
+/*------PROJECTS-----*/
+
+#projects {
+  padding: 80px 0px 0px;
+}
+
+#portfolio-header {
+  margin: 0px 0px 60px;
+}
+
+#projects h4 {
+  margin: 0px 0px 40px;
+}
+
+.project-link a {
+  margin: 40px 0px 60px;
+  padding: 12px 60px;
+}
+
+.project-description p {
+  margin: 0px 0px 30px;
+}
+
+/*---SKILLS---*/
+
+#skills {
+  padding: 80px 0px;
+}
+
+.skills-header {
+  margin: 0px 0px 40px;
+}
+
+#skills h4 {
+  margin: 40px 0px 20px 0px;
+}
+
+.language-wrapper,
+.tech-wrapper p {
+  margin: 20px 0px;
+  padding: 15px 0px;
+}
+
+/*----ABOUT-----*/
+
+#about {
+  padding: 80px 0px;
+}
+
+figure {
+  margin: 20px 0 40px 0;
+}
+
+.about-info h3 {
+  margin: 80px 0px;
+}
+
+.about-info h4 {
+  margin: 0px 0px 60px;
+}
+
+.about-text {
+  margin: 0px 0px 30px;
+}
+
+/*-----FOOTER----*/
+
+footer {
+  padding: 140px 0px 80px;
+}
+
+.contact-info h3 {
+  margin: 0px 0px 60px;
+}
+
+.contact-info {
+  margin: 80px 0px;
+}
+.contact-title h5 {
+  margin: 0px 0px 30px;
+}
+
+/*********STRUCTURAL STYLES*****/
+/*---HEADER---*/
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.intro-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.intro-area {
+  max-width: 80%;
+}
+
+/*---PROJECTS---*/
+
+.project-items {
+  justify-content: space-around;
+}
+
+.home-project-info {
+  width: 45%;
+  align-items: center;
+}
+
+.project-description {
+  width: 95%;
+}
+
+/*----SKILLS---*/
+
+.language-wrapper,
+.tech-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.skill,
+.tech {
+  width: 45%;
+}
+
+/*-----ABOUT----*/
+
+.about-content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+figure {
+  width: 60%;
+}
+
+.about-info h4 {
+  text-align: left;
+}
+
+/*----FOOTER----*/
+
+.footer-content {
+  display:flex;
+  justify-content: space-around;
+}
+
+.contact-info {
+  width: 33%;
+}
+
+footer ul {}
+
+.social-icons {}
+
+.social-icons li i {}
+
+.copyright {}
+
+
+
+
+
 }
 
 /* ----------- Monitors larger than 1200px wide ----------- */
