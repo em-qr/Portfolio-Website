@@ -785,6 +785,7 @@ header nav ul {
 
 #about figure {
   width: 60%;
+  max-width: 400px;
 }
 
 .about-info h4 {
