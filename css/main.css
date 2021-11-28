@@ -215,6 +215,9 @@ width: 85%;
   text-align: left;
 }
 
+.copyrght {
+  width: 100%;
+}
 /********default margins*****/
 
 h1,
@@ -490,6 +493,7 @@ footer .social-icons li i {
 
 .copyright {
   font-size: 0.80rem;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -714,6 +718,7 @@ footer {
   margin: 0px 0px 30px;
 }
 
+
 /*********STRUCTURAL STYLES*****/
 /*---HEADER---*/
 header .content-wrapper {
@@ -808,6 +813,10 @@ footer ul {
   width: 50%
 }
 
+.copyright {
+  width:100%;
+}
+
 }
 
 @media only screen and (min-width:1024px) {
@@ -823,6 +832,10 @@ footer ul {
 
   #about span {
     margin: 0px;
+  }
+
+  .copyright {
+    width:100%;
   }
 }
 
@@ -1070,6 +1083,7 @@ span,
 
 .copyright {
   font-size: 1.25rem;
+  width: 100%;
 }
 }
 
