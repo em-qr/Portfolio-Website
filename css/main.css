@@ -1117,10 +1117,11 @@ span,
 }
 
 #myBtn {
-  left: 95%;
-  max-width: 50px;
+  top: 60px;
+  max-width: 60px;
+  left: 700px;
   font-size: 1rem;
-  padding: 10px 1px;
+  padding: 5px 1px;
 }
 }
 
