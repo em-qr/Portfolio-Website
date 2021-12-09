@@ -500,17 +500,14 @@ footer .social-icons li i {
 }
 
 #myBtn {
-  position: fixed;
-  bottom: 10px;
-  float: right;
-  right: 18.5%;
-  left: 95%;
+  position: relative;
+  left: 300px;
   max-width: 50px;
   width: 100%;
-  font-size: .75rempx;
+  font-size: .50rem;
   border-color: rgba(85, 85, 85, 0.2);
   background-color: #F19494;
-  padding: 10px 1px;
+  padding: 5px 1px;
   border-radius: 30px;
   text-transform: uppercase;
   font-weight: bold;
@@ -842,6 +839,12 @@ footer ul {
   width:100%;
 }
 
+#myBtn {
+  left: 91.5%;
+  font-size: .75rem;
+  padding: 5px 1px;
+}
+
 }
 
 @media only screen and (min-width:1024px) {
@@ -1109,6 +1112,13 @@ span,
 .copyright {
   font-size: 1.25rem;
   width: 100%;
+}
+
+#myBtn {
+  left: 95%;
+  max-width: 50px;
+  font-size: 1rem;
+  padding: 10px 1px;
 }
 }
 
